@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="de">
+
+	<head>
+		<meta charset="utf-8">
+		<style>
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+}
+
+/* Create two equal columns that sits next to each other */
+.column {
+  flex: 50%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+</style>
+		<title>Heimexperimente mit phyphox</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/league.css" id="theme">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/monokai.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section data-background="bridge.gif">
+					<h1>Schwingungen</h1>
+					<h3>Heimversuch mit phyphox zu Schwingungen</h3>
+					<p>
+						<small>Erstellt von <a href="http://github.com/AlexanderKrampe">Alexander Krampe, Max-Planck Gymnasium Düsseldorf</a></small>
+					</p>
+				</section>
+
+				<section>
+					<h1>phyphox Versuch</h1>
+					<p> Euer Experiment: Überprüft eine Formel für die Periodendauer eines Fadenpendels mit Hilfe von phyphox.</p>
+					<p style="font-size:10px">Wenn ihr euch unsicher seit bei manchen Schritten, gibt es auch Hilfen (die ihr aber nicht nutzen müsst - ihr könnt auch einfach loslegen).</p>
+				</section>
+
+				
+				<section>
+					<h3>Die Formel, die ihr überprüfen sollt</h3>
+					<p> $$T = 2\pi \sqrt{\frac{l}{g}}$$</p>
+					<p class="fragment"> Wofür stehen die Buchstaben?</p>
+					<ol class = "fragment">
+					<li>$T$ ist die Periodendauer</li>
+					<li>$l$ ist die Länge des Fadens</li>
+					<li>$g$ ist die Erdbeschleunigung</li>
+					</ol>
+					<br>
+					<p style="font-size:8px" class = "fragment">Später wird beschrieben, ihr da vorgehen müsst.</p>
+				</section>
+				
+
+				<section data-background-iframe="https://www.youtube.com/embed/q3_m1JW1ttQ" data-background-interactive>
+					<div style="position: absolute; width: 40%; right: 0; box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 20px; font-size: 20px; text-align: left;">
+						<h2>Tipps zum Bau und der Messwertaufnahme</h2>
+						<p>Schaut euch das Video an. Navigiert danach weiter nach rechts (unten rechts blauer Pfeil).</p>
+					</div>
+				</section>
+
+				<section>
+					<section>
+						<h2>1. Schritt</h2>
+						<p>Nutzt insgesamt 4 verschieden lange Fadenlängen $l$. </p>
+						<p class ="fragment">Schneidet dazu Kordeln auf verschiedene Längen zurecht. </p>
+						<p class="fragment"> Keine Ideen für sinnvolle Fadenlängen? <a href="#/4/1"> Hier klicken.</a></p>
+						
+					</section>
+					
+					<section>
+					<p> Der Faden sollte nicht zu kurz sein. Alles über $20$ cm sollte passen.</p>
+					<a href="#/4">Hier geht's zurück.</a>
+					</section>
+				</section>
+				
+				<section>
+					<h2>2. Schritt</h2>
+					<h5>Nachdem ihr den Faden an eurem Handy befestigt habt und so ein Fadenhandypendel gebaut habt, wählt das Experiment "Fadenpendel" in phyphox aus.</h5>
+					<h5 class = "fragment"> Wählt anschließend oben in Tabs "g" aus.</h5>
+				</section>
+				
+				<section>
+				<h3> Das sollte dann so aussehen</h3>
+				<img src="screen.png" width="30%" height="30%" align="left">
+				<p style="text-align:block" class = "fragment"> Jetzt müsst ihr noch die Pendellänge eintragen (wichtig: in cm).</p>
+				<p style="text-align:block" class = "fragment"> Messt dazu mit einem Maßband die Länge eures Pendels.</p>
+				</section>
+				
+				<section data-background="gif.gif">
+				<h5> Lasst eurer Handy jetzt für die verschiedenen Fadenlängen schwingen.</h5>
+				<h5 class = "fragment"> Notiert euch anschließend die Periodendauer $~T~$ und die entsprechend benutzte Fadenlänge $~l$.</h5>
+				</section>
+
+				<section>
+					<h2>Erstellt dann eine Tabelle</h2>
+					<table>
+						<thead>
+							<tr>
+								<th>Fadenlänge $~l$</th>
+								<th>Gemessene Periodendauer</th>
+								<th>Theoretische Periodendauer</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Länge 1</td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>Länge 2</td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>Länge 3</td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>Länge 4</td>
+								<td></td>
+								<td></td>
+							</tr>
+						</tbody>
+					</table>
+				</section>
+
+				<section>
+				<h4> Tragt die von phyphox gemessene Periodendauer in die Tabelle ein.</h4>
+				<h4 class = "fragment">Berechnet dann die theoretische Periodendauer mit Hilfe der <a href="#/2"> vorherigen Formel.</a></h4>
+				</section>
+
+				<section>
+					<h2>Vergleicht die Werte</h2>
+					<p>
+						Liegen eure gemessenen Periodendauern nahe an der theoretisch zu erwartenden Periodendauer?
+					</p>
+					<p class="fragment">Bildet Hypothesen: Was könnten Gründe für Abweichungen sein?</p>
+					<p class = "fragment"> Würdet ihr sagen, dass eure gemessenen Werte die Formel bestätigen?</p>
+				</section>
+				
+				
+				<section style="text-align: center;">
+					<h1>ENDE</h1>
+				</section>
+
+			</div>
+
+		</div>
+
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				center: true,
+				hash: true,
+
+				transition: 'zoom', // none/fade/slide/convex/concave/zoom
+				math: {
+					mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js',
+					config: 'TeX-AMS_HTML-full', // See http://docs.mathjax.org/en/latest/config-files.html
+					// pass other options into `MathJax.Hub.Config()`
+					TeX: { Macros: { RR: "{\\bf R}" } }
+					},
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js' },
+					{ src: 'plugin/search/search.js', async: true },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/math/math.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
