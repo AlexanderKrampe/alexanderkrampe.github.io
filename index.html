@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="de">
+
+	<head>
+		<meta charset="utf-8">
+
+
+
+
+		<title>Hilfestellungen</title>
+
+		<meta name="description" content="Hilfestellungen">
+		<meta name="author" content="Alexander Krampe">
+
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/league.css" id="theme">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/monokai.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				
+				
+				<section>
+					<h1>Hilfestellungen</h1>
+					<h3><a href="#/2">Hilfestellung 1</a></h3>
+					<h3><a href="#/1">Hilfestellung 2 </a></h3>
+					<br>
+					<h3><a href="#/3"> Hier geht's zu den Zusatzaufgaben </a></h3>
+				</section>
+				
+				<section>
+					 <img src="HilfeA2.png">
+					 <br>
+					 <br>
+					 <br>
+					 <h5><a href="#/">Hier geht's zurück zur Übersicht </a></h5>
+				</section>
+				
+				<section>
+					<p>Überlege dir, welchen Einfluss die Lenz'sche Regel beim Schließen des Schalters auf die Spule hat. </p>
+					<br>
+					<br>
+					<h5><a href="#/">Hier geht's zurück zur Übersicht </a></h5>
+				</section>
+				<section>
+					<h1>Zusatzaufgaben</h1>
+					<h3><a href="#/5"> Simulation Strom- und Spannungsverlauf </a></h3>
+					<h3><a href="#/4">Gleichung der Selbstinduktion </a></h3>
+					<br>
+					<br>
+					<h5><a href="#/">Hier geht's zurück zur Übersicht </a></h5>
+				</section>
+				
+				<section>
+					Für die Selbstinduktionsspannung \(U_L\) der Spule gilt das Induktionsgesetz:
+					<br><br>
+					\(U_L = - U_{ind} = -\left(-n\frac{d\Phi}{dt}\right) =n\frac{d\Phi}{dt}\)<br><br>
+					Hierbei ist \(\Phi = AB \) der magnetische Fluss durch die Spule.<br>
+					<p>Bilde die zeitliche Ableitung von \(\Phi\), um \(U_L\) zu bestimmen.</p>
+					<h5><a href="#/">Hier geht's zurück zur Übersicht </a></h5>
+				</section>
+				
+				<section>
+					<p>Erkläre mit Hilfe des Induktionsgesetzes und anhand der Geogebra Simulation, den zeitlichen Verlauf und das Vorzeichen der Induktionsspannung in der Spule</p>
+					<p><a href="https://www.geogebra.org/m/vzv4utbf">Geogebra Link</a></p>
+					<br>
+					<br>
+					<h5><a href="#/">Hier geht's zurück zur Übersicht </a></h5>
+				</section>
+
+			</div>
+
+		</div>
+
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				center: true,
+				hash: true,
+
+				
+				math: {
+		mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js',
+		config: 'TeX-AMS_HTML-full', // See http://docs.mathjax.org/en/latest/config-files.html
+		// pass other options into `MathJax.Hub.Config()`
+		TeX: { Macros: { RR: "{\\bf R}" } }
+	},
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js' },
+					{ src: 'plugin/search/search.js', async: true },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/math/math.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
